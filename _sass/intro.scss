@@ -1,0 +1,53 @@
+.intro_wrapper {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 210px);
+  width: 100vw;
+  overflow: hidden;
+}
+
+.intro_title-box {
+  position: absolute;
+  padding: 50px;
+  margin-top: 80px;
+  margin-left: 80px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro_title {
+  font-family: Sansation;
+  font-size: 115px;
+  color: $oxford-blue;
+}
+
+.intro_subtitle {
+  font-family: Lato;
+  font-style: Italic;
+  font-size: 24px;
+  color: $oxford-blue;
+}
+
+.intro_rocket {
+  width: 250px;
+  position: absolute;
+  right: 125px;
+  top: 100px;
+  transform: rotate(15deg);
+  animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    top: 100px;
+  }
+  50% {
+    top: 110px;
+  }
+  100% {
+    top: 100px;
+  }
+}

@@ -1,0 +1,175 @@
+.information_wrapper {
+  width: 95vw;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.information_services-wrapper {
+  width: 70%;
+  position: relative;
+}
+
+.information_services-banner {
+  width: 100%;
+  height: 50px;
+  background: $oxford-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Lato-Regular;
+  margin-bottom: 30px;
+}
+
+.information_services-service {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information_service-title {
+  font-family: Sansation;
+}
+
+.information_service-icon {
+  width: 40px;
+  margin: 10px;
+}
+
+.strategy {
+  color: $strategy-red;
+}
+
+.wechat {
+  color: $wechat-green;
+}
+
+.website {
+  color: $website-blue; 
+}
+
+.webapp {
+  color: $oxford-blue;
+}
+
+.workshop {
+  color: $zima-blue;
+}
+
+.information_about-contact-container {
+  margin-left: 30px;
+  width: calc(30% - 30px);
+  flex-shrink: 0
+}
+
+.information_about-wrapper {
+  width: 100%;
+}
+
+.information_about-banner {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: $oxford-blue;
+  font-family: Lato-Regular; 
+  margin-bottom: 30px;
+}
+
+.information_about-content {
+  font-size: 14px;
+  font-family: lato-regular;
+}
+
+.information_about-reason {
+  width: 100%;
+  display: flex;
+  &:last-child {
+    .information_about-reason-content {
+      border-bottom: 0  
+    }
+  }
+}
+
+.information_about-number {
+  height: 75px;
+  width: 75px;
+  flex-shrink: 0;
+  font-size: 60px;
+  font-family: Sansation;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.information_about-reason-content {
+  font-size: 14px;
+  font-family: lato-regular;
+  padding: 30px 0;
+  border-bottom: 2px solid $oxford-blue;
+}
+
+.information_contact-wrapper {
+  margin: 30px 0;
+  width: 100%;
+  height: 450px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  border: 8px solid $oxford-blue;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(82, 179, 224, 0.5) 100%), #FFFFFF;
+}
+
+.information_alien-icon {
+  width: 140px;
+  position: absolute;
+  top: -40px;
+}
+
+.information_contact-title {
+  font-size: 20px;
+  font-family: Lato-Regular;
+  color: $oxford-blue;
+  text-align: center;
+}
+
+.information_input {
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-style: italic;
+  border: 0;
+  border-bottom: 1px solid $oxford-blue;
+  background: unset;
+  width: 80%;
+  font-size: 14px;
+}
+
+.input-box {
+  height: 100px;
+  background: white;
+  border-bottom: 0;
+}
+
+.information_submit {
+  height: 40px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: $oxford-blue;
+  font-family: Lato-Regular;
+  font-size: 15px;
+}

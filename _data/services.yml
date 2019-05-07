@@ -1,0 +1,15 @@
+- name: Digital Strategy
+  icon: /assets/images/strategy-red.svg
+  class: strategy
+- name: WeChat Mini Programs
+  icon: /assets/images/wechat-green.svg
+  class: wechat
+- name: Websites
+  icon: /assets/images/website-blue.svg
+  class: websites
+- name: Web Apps
+  icon: /assets/images/webapp-blue.svg
+  class: webapps
+- name: Workshops
+  icon: /assets/images/workshop-blue.svg
+  class: workshop
