@@ -1,8 +1,8 @@
 // Variables
 var totalObjects = 500;
 var maxVelocity = .5;
-var starSize = 1.25;
-var twinkleFreq = 50000;
+var starSize = 2;
+var twinkleFreq = 200000;
 var shootingStarFreq = 75;
 var shootingStarVelocity = 150;
 var shootingStarSize = 1;
@@ -16,7 +16,6 @@ window.requestAnimFrame = (function(){
             setInterval(callback, 75);
           };
 })();
-
 
 // DOM Elements
 var canvas = document.getElementById('starfield');
@@ -47,7 +46,7 @@ function init() {
 function draw() {
   requestAnimFrame(draw);
   
-  ctx.fillStyle = "rgba(255, 255, 255, .8)";
+  ctx.fillStyle = "rgba(255, 255, 255, .5)";
   ctx.fillRect (0, 0, canvas.width, canvas.height);
 
   for (f = 0; f < stars.length; f++) {
@@ -91,12 +90,9 @@ function Star() {
   
   this.Draw = function() {
     ctx.fillStyle = "rgba(10, 33, 65," + this.Opacity + ")";
-    if(Math.round((Math.random()*twinkleFreq))==1){
-      ctx.fillRect(this.X,this.Y,starSize+2,starSize+2);
-    }
-    else{
-      ctx.fillRect(this.X,this.Y,starSize,starSize);
-    }
+    ctx.beginPath();
+    ctx.arc(this.X, this.Y, starSize, 0, 2 * Math.PI);
+    ctx.fill();
   };
 }
 

@@ -86,7 +86,7 @@
   width: 20%;
   max-width: 250px;
   position: absolute;
-  right: 20%;
+  right: 15%;
   top: 15%;
   transform: rotate(15deg);
   animation: float 1.5s ease-in-out infinite;
