@@ -1,6 +1,5 @@
 @import "fonts";
 @import "colors";
-@import "stars";
 @import "navigation";
 @import "intro";
 @import "information";
@@ -9,7 +8,6 @@
 body {
     margin: 0;
     -webkit-overflow-scrolling: touch;
-    perspective: 340px;
 }
 
 .lower-navigation_wrapper {
