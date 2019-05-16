@@ -7,12 +7,14 @@
   position: relative;
 }
 
-.information_services-wrapper {
+// Our Services
+
+.services_wrapper {
   width: 70%;
   position: relative;
 }
 
-.information_services-banner {
+.services_banner {
   width: 100%;
   height: 50px;
   background: $oxford-blue;
@@ -24,56 +26,133 @@
   margin-bottom: 30px;
 }
 
-.information_services-service {
+.services_container {
   width: 100%;
-  height: 200px;
+  height: 300px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  &:active {
+    .services_expand-wrapper {
+      transform: scale(1000);
+      transition: linear .5s;
+    }
+    .services_expand-description {
+      display: unset;
+    }
+    .services_expand-icon {
+      display: unset;
+    }
+    .services_box {
+      position: absolute;
+      top: 20px; 
+      left: 20px;
+      flex-direction: row;
+      transition: linear .5s;
+    }
+    .services_title {
+      color: white !important;
+      z-index: 100
+    }
+    .services_icon {
+      display: none;
+    }
+  }
+}
+
+.services_box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.information_service-title {
-  font-family: Sansation;
+.services_expand-icon {
+  display: none;
+  width: 40px;
+  margin: 0 10px;
+  z-index: 100;
 }
 
-.information_service-icon {
+.services_expand-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  transition: linear .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.services_expand-description {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-family: Lato-Regular;
+}
+
+.services_title {
+  font-family: Sansation;
+  background-color: unset !important;
+}
+
+.services_icon {
   width: 40px;
   margin: 10px;
 }
 
+.services_click-cta {
+  margin: 50px;
+  background-color: unset !important;
+  font-family: Lato-Regular;
+  font-style: italic;
+  font-size: 14px;
+}
+
 .strategy {
   color: $strategy-red;
+  background-color: $strategy-red;
 }
 
 .wechat {
   color: $wechat-green;
+  background-color: $wechat-green;
 }
 
 .website {
-  color: $website-blue; 
+  color: $website-blue;
+  background-color: $website-blue;
 }
 
 .webapp {
   color: $oxford-blue;
+  background-color: $oxford-blue;
 }
 
 .workshop {
   color: $zima-blue;
+  background-color: $zima-blue;
 }
 
-.information_about-contact-container {
-  margin-left: 30px;
-  width: calc(30% - 30px);
-  flex-shrink: 0
-}
+// About Us
 
-.information_about-wrapper {
+.about_container {
   width: 100%;
 }
 
-.information_about-banner {
+.about_banner {
   width: 100%;
   height: 50px;
   display: flex;
@@ -85,22 +164,22 @@
   margin-bottom: 30px;
 }
 
-.information_about-content {
+.about_content {
   font-size: 14px;
   font-family: lato-regular;
 }
 
-.information_about-reason {
+.about_reason {
   width: 100%;
   display: flex;
   &:last-child {
-    .information_about-reason-content {
+    .about_reason-content {
       border-bottom: 0  
     }
   }
 }
 
-.information_about-number {
+.about_number {
   height: 75px;
   width: 75px;
   flex-shrink: 0;
@@ -110,14 +189,20 @@
   padding: 30px 0;
 }
 
-.information_about-reason-content {
+.about_reason-content {
   font-size: 14px;
   font-family: lato-regular;
   padding: 30px 0;
   border-bottom: 2px solid $oxford-blue;
 }
 
-.information_contact-wrapper {
+.about_wrapper {
+  margin-left: 30px;
+  width: calc(30% - 30px);
+  flex-shrink: 0
+}
+
+.contact_wrapper {
   margin: 30px 0;
   width: 100%;
   height: 450px;
@@ -132,20 +217,20 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(82, 179, 224, 0.5) 100%), #FFFFFF;
 }
 
-.information_alien-icon {
+.contact_alien-icon {
   width: 140px;
   position: absolute;
   top: -40px;
 }
 
-.information_contact-title {
+.contact_title {
   font-size: 20px;
   font-family: Lato-Regular;
   color: $oxford-blue;
   text-align: center;
 }
 
-.information_input {
+.contact_input {
   font-family: Lato-Regular;
   font-size: 15px;
   font-style: italic;
@@ -162,7 +247,7 @@
   border-bottom: 0;
 }
 
-.information_submit {
+.contact_submit {
   height: 40px;
   width: 50%;
   display: flex;
@@ -172,4 +257,29 @@
   background: $oxford-blue;
   font-family: Lato-Regular;
   font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .information_wrapper {
+    flex-direction: column;
+  }
+
+  .services_wrapper {
+    width: 100%;
+  }
+
+  .services_expand-description {
+    flex-wrap: nowrap;
+    width: 80%;
+  }
+
+  .about_wrapper {
+    width: 100%;
+    margin-left: unset;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  
 }

@@ -2,7 +2,6 @@
 layout: default
 title: Zima Digital
 ---
-
 <div class="intro_wrapper">
   <canvas id="starfield"></canvas>
   <div class="intro_title-box">
@@ -18,44 +17,50 @@ title: Zima Digital
 </div>
 
 <div class="information_wrapper">
-  <div class="information_services-wrapper">
-    <div class="information_services-banner">OUR SERVICES</div>
+  <div class="services_wrapper">
+    <div class="services_banner">OUR SERVICES</div>
     {% for item in site.data.services %}
-    <div class="information_services-service">
-      <img class="information_service-icon" src="{{ item.icon }}" alt="Zima Digital {{ item.name }} Icon">
-      <div class="information_service-title {{item.class}}">{{item.name}}</div>
+    <div class="services_container">
+      <div class="services_box">
+        <img class="services_icon" src="{{ item.color_icon }}" alt="Zima Digital {{ item.name }} Icon">
+        <img class="services_expand-icon" src="{{ item.white_icon }}" alt="Zima Digital {{ item.name }} Icon">
+        <div class="services_title {{item.class}}">{{item.name}}</div>
+      </div>
+      <div class="services_expand-wrapper {{item.class}}"></div>
+      <div class="services_expand-description">{{item.description}}</div>
+      <div class="services_click-cta {{item.class}}">Long press for more info</div>
     </div>
     {% endfor %}
   </div>
 
-  <div class="information_about-contact-container">
-    <div class="information_about-wrapper">
-      <div class="information_about-banner">ABOUT OUR SQUAD</div>
-      <div class="information_about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde modi obcaecati dolor tempora autem facilis dolore sint laudantium quisquam blanditiis quam velit beatae animi ipsam assumenda officiis ipsa, possimus, nostrum.</div>
-      <div class="information_about-reason">
-        <div class="information_about-number">1</div>
-        <div class="information_about-reason-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt et mollitia incidunt enim, fugiat accusamus excepturi fugit unde error corporis veniam ipsum optio nihil praesentium ducimus, temporibus, dolorem aut cupiditate!</div>
+  <div class="about_wrapper">
+    <div class="about_container">
+      <div class="about_banner">ABOUT OUR SQUAD</div>
+      <div class="about_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde modi obcaecati dolor tempora autem facilis dolore sint laudantium quisquam blanditiis quam velit beatae animi ipsam assumenda officiis ipsa, possimus, nostrum.</div>
+      <div class="about_reason">
+        <div class="about_number">1</div>
+        <div class="about_reason-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt et mollitia incidunt enim, fugiat accusamus excepturi fugit unde error corporis veniam ipsum optio nihil praesentium ducimus, temporibus, dolorem aut cupiditate!</div>
       </div>
-      <div class="information_about-reason">
-        <div class="information_about-number">2</div>
-        <div class="information_about-reason-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deserunt labore nostrum perferendis enim voluptatem! Molestiae in neque asperiores atque modi ea aspernatur sit, veniam fugiat deleniti dolorem? Doloribus, nam!</div>
+      <div class="about_reason">
+        <div class="about_number">2</div>
+        <div class="about_reason-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deserunt labore nostrum perferendis enim voluptatem! Molestiae in neque asperiores atque modi ea aspernatur sit, veniam fugiat deleniti dolorem? Doloribus, nam!</div>
       </div>
-      <div class="information_about-reason">
-        <div class="information_about-number">3</div>
-        <div class="information_about-reason-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quod rerum, quae fugit quo soluta eius ullam nihil, corporis expedita, officiis iste est modi amet libero asperiores earum vero animi!</div>
+      <div class="about_reason">
+        <div class="about_number">3</div>
+        <div class="about_reason-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quod rerum, quae fugit quo soluta eius ullam nihil, corporis expedita, officiis iste est modi amet libero asperiores earum vero animi!</div>
       </div>
     </div>
 
-    <div class="information_contact-wrapper">
-      <img class="information_alien-icon" src="/assets/images/alien.png" alt="Zima Digital Alien Spaceship">
-      <div class="information_contact-title">
+    <div class="contact_wrapper">
+      <img class="contact_alien-icon" src="/assets/images/alien.png" alt="Zima Digital Alien Spaceship">
+      <div class="contact_title">
         <div>Like what you see?</div>
         <div>Leave a message.</div>
       </div>
-      <input class="information_input" type="text" placeholder="Your name">
-      <input class="information_input" required="true" type="text" placeholder="Your email, WeChat, or phone">
-      <input class="information_input input-box" placeholder="Your message" type="text">
-      <input class="information_submit" type="submit" value="SUBMIT">
+      <input class="contact_input" type="text" placeholder="Your name">
+      <input class="contact_input" required="true" type="text" placeholder="Your email, WeChat, or phone">
+      <input class="contact_input input-box" placeholder="Your message" type="text">
+      <input class="contact_submit" type="submit" value="SUBMIT">
     </div>
   </div>
 </div>

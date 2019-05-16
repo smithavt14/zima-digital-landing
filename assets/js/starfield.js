@@ -1,6 +1,6 @@
 // Variables
 var totalObjects = 500;
-var maxVelocity = .5;
+var maxVelocity = .125;
 var starSize = 2;
 var twinkleFreq = 200000;
 var shootingStarFreq = 75;
@@ -38,7 +38,7 @@ requestAnimFrame(draw);
 // Initialization Function
 function init() {
   for(i = 0; i < totalObjects; i++) {
-    stars.push(new Star());
+    stars.push(new Star(i));
   }
 }
 
@@ -67,31 +67,32 @@ function update() {
   
   for(f = 0; f < shootingStars.length; f++) {
     if (shootingStars[f].X < -1000) {
-      shootingStars.splice(f,1);
+      shootingStars.splice(f, 1);
     }
   }
 }
 
 
-function Star() {
+function Star(i) {
+  this.starSize = Math.random() * starSize
   this.X = Math.random() * canvas.width;
   this.Y = Math.random() * canvas.height;
   this.Velocity = (Math.random() * maxVelocity);
-  this.Opacity = (((Math.random() * 10) + 1) * 0.1);
   
   this.Update = function() {
     this.X -= this.Velocity;
     this.Y += this.Velocity * .5;
     if (this.X < 0 || this.Y > canvas.height) {
-      this.X = Math.random() * canvas.width;
+      this.X = Math.random() * canvas.width * 2;
       this.Y = Math.random() * canvas.height;
     }
   };
   
   this.Draw = function() {
-    ctx.fillStyle = "rgba(10, 33, 65," + this.Opacity + ")";
+    ctx.fillStyle = "rgba(10, 33, 65, 1)"
     ctx.beginPath();
-    ctx.arc(this.X, this.Y, starSize, 0, 2 * Math.PI);
+    ctx.arc(this.X, this.Y, this.starSize, 0, 2 * Math.PI);
+    this.draw = true
     ctx.fill();
   };
 }
@@ -108,7 +109,7 @@ function ShootingStar() {
   this.Draw = function() {
     for (var i = 0; i < this.Length; i++){
       opacity = (0.8 - (0.001 * i));
-      ctx.fillStyle = "rgba(10, 33, 65," + opacity + ')'
+      ctx.fillStyle = "rgba(10, 33, 65, 1)"
       ctx.fillRect(this.X + i, this.Y, shootingStarSize, shootingStarSize);
     }
   };

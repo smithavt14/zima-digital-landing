@@ -1,15 +1,25 @@
 - name: Digital Strategy
-  icon: /assets/images/strategy-red.svg
+  color_icon: /assets/images/strategy-red.svg
+  white_icon: /assets/images/strategy-white.svg
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam quo magni ab, veniam at adipisci obcaecati, iusto natus eaque maxime! Aliquam animi iusto placeat possimus facilis quam expedita et.
   class: strategy
 - name: WeChat Mini Programs
-  icon: /assets/images/wechat-green.svg
+  color_icon: /assets/images/wechat-green.svg
+  white_icon: /assets/images/wechat-white.svg
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam quo magni ab, veniam at adipisci obcaecati, iusto natus eaque maxime! Aliquam animi iusto placeat possimus facilis quam expedita et.
   class: wechat
 - name: Websites
-  icon: /assets/images/website-blue.svg
-  class: websites
+  color_icon: /assets/images/website-blue.svg
+  white_icon: /assets/images/website-white.svg
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam quo magni ab, veniam at adipisci obcaecati, iusto natus eaque maxime! Aliquam animi iusto placeat possimus facilis quam expedita et.
+  class: website
 - name: Web Apps
-  icon: /assets/images/webapp-blue.svg
-  class: webapps
+  color_icon: /assets/images/webapp-blue.svg
+  white_icon: /assets/images/webapp-white.svg
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam quo magni ab, veniam at adipisci obcaecati, iusto natus eaque maxime! Aliquam animi iusto placeat possimus facilis quam expedita et.
+  class: webapp
 - name: Workshops
-  icon: /assets/images/workshop-blue.svg
+  color_icon: /assets/images/workshop-blue.svg
+  white_icon: /assets/images/workshop-white.svg
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam quo magni ab, veniam at adipisci obcaecati, iusto natus eaque maxime! Aliquam animi iusto placeat possimus facilis quam expedita et.
   class: workshop

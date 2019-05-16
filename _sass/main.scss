@@ -4,9 +4,13 @@
 @import "intro";
 @import "information";
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
+    padding: 0;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -29,4 +33,3 @@ body {
   font-size: 15px;
   color: $oxford-blue;
 }
-
