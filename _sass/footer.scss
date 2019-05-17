@@ -35,9 +35,38 @@
 .footer_bottom-container {
   height: 75px;
   color: white;
-  text-align: left;
   width: 95%;
   display: flex;
   align-items: center;
   font-family: Lato Light;
+}
+
+@media screen and (max-width: 800px) {
+  .footer_top-container {
+    height: unset;
+    flex-direction: column;
+  }
+
+  .footer_wrapper {
+    height: unset;
+  }
+
+  .footer_top-container-left {
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .footer_top-container-right {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+    margin: 30px 0
+  }
+
+  .footer_bottom-container {
+    justify-content: center;
+  }
 }

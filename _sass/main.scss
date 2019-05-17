@@ -28,10 +28,22 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 .lower-navigation_tab {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Lato-Regular;
   font-size: 15px;
   color: $oxford-blue;
+  cursor: pointer;
+  // &:hover {
+  //   background: $oxford-blue;
+  //   color: white;
+  //   transition: linear .5s;
+  // }
 }

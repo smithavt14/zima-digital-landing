@@ -98,6 +98,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 80%;
   transform: translateX(-50%) translateY(-50%);
   color: white;
   font-family: Lato-Regular;
@@ -318,4 +319,17 @@
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+
+@media screen and (max-width: 800px) {
+  .services_expand-description {
+    width: 95%;
+  }
+
+  .services_container {
+    height: 50vh;
+    max-height: 300px;
+  }
+
 }
