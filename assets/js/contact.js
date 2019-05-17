@@ -2,7 +2,6 @@ const contact = document.querySelector('.contact_wrapper')
 
 window.addEventListener('scroll', function(e) {
   let rect = contact.getBoundingClientRect()
-  console.log(rect.top)
 
   if (rect.top <= 120) {
     contact.classList.add('contact_wrapper-fixed')

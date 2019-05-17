@@ -244,23 +244,23 @@
   align-items: center;
   position: relative;
   overflow: hidden; }
-  .services_container:active .services_expand-wrapper {
+  .services_container:hover .services_expand-wrapper {
     transform: scale(1000);
     transition: linear .5s; }
-  .services_container:active .services_expand-description {
+  .services_container:hover .services_expand-description {
     display: unset; }
-  .services_container:active .services_expand-icon {
+  .services_container:hover .services_expand-icon {
     display: unset; }
-  .services_container:active .services_box {
+  .services_container:hover .services_box {
     position: absolute;
     top: 20px;
     left: 20px;
     flex-direction: row;
     transition: linear .5s; }
-  .services_container:active .services_title {
+  .services_container:hover .services_title {
     color: white !important;
     z-index: 100; }
-  .services_container:active .services_icon {
+  .services_container:hover .services_icon {
     display: none; }
 
 .services_box {

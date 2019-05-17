@@ -36,7 +36,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  &:active {
+  &:hover {
     .services_expand-wrapper {
       transform: scale(1000);
       transition: linear .5s;

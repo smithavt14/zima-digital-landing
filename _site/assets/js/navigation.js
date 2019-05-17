@@ -10,5 +10,5 @@ window.addEventListener('scroll', function(e) {
 })
 
 logo.addEventListener('click', function(e) {
-  window.scrollTo(0,0)
+  window.scroll(0,0)
 })
