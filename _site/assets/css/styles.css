@@ -135,7 +135,7 @@
   position: absolute;
   right: 10%;
   transform: rotate(15deg);
-  animation: float 1.5s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite;
   z-index: 10; }
 
 @keyframes float {
@@ -189,7 +189,7 @@
     position: absolute;
     right: 10%;
     transform: rotate(15deg);
-    animation: float 1.5s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
     z-index: 10; }
 
   .intro_title-box {
@@ -493,23 +493,24 @@
   font-family: Lato-Regular; }
 
 .work_container {
-  padding: 60px 0;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
-  border-bottom: 1px solid #0A2141; }
+  border-bottom: 2px solid rgba(10, 33, 65, 0.25); }
   .work_container:last-child {
     border-bottom: unset; }
 
 .work_info-box {
-  width: 35%;
+  width: 40%;
   position: relative;
   display: flex;
   flex-direction: column; }
 
 .work_image-box {
-  width: 60%;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -520,20 +521,39 @@
   width: 32%; }
 
 .work_title {
-  font-family: Lato Black;
-  font-size: 40px;
+  font-family: Lato;
+  font-size: 28px;
   margin-bottom: 5px; }
 
 .work_subtitle {
   font-family: Lato;
   font-size: 15px;
-  color: #CA364A;
+  color: #53B4E0;
   margin-bottom: 20px; }
 
 .work_description {
   font-family: Lato;
   font-size: 15px; }
 
+.concord {
+  color: #FBA52F; }
+
+@media screen and (max-width: 800px) {
+  .work_container {
+    flex-direction: column;
+    justify-content: space-around;
+    height: unset;
+    padding: 60px 0; }
+
+  .work_info-box {
+    width: 100%;
+    margin-bottom: 30px; }
+
+  .work_image-box {
+    width: 100%; }
+
+  #concord-container {
+    flex-direction: column-reverse; } }
 .footer_wrapper {
   height: 300px;
   width: 100vw;
