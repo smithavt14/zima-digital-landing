@@ -42,7 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Sansation;
+  font-family: Sansation-Regular;
   font-size: 25px;
   height: 100%;
   cursor: pointer; }
@@ -119,12 +119,12 @@
   padding: 20px; }
 
 .intro_title {
-  font-family: Sansation;
+  font-family: Sansation-Regular;
   font-size: 120px;
   color: #0A2141; }
 
 .intro_subtitle {
-  font-family: Lato;
+  font-family: Lato-Regular;
   font-style: Italic;
   font-size: 24px;
   color: #0A2141; }
@@ -166,7 +166,7 @@
     background: white; }
 
   .intro_subtitle {
-    font-family: Lato;
+    font-family: Lato-Regular;
     font-style: Italic;
     font-size: 24px;
     color: #0A2141;
@@ -532,18 +532,18 @@
   width: 32%; }
 
 .work_title {
-  font-family: Lato;
+  font-family: Lato-Regular;
   font-size: 28px;
   margin-bottom: 5px; }
 
 .work_subtitle {
-  font-family: Lato;
+  font-family: Lato-Regular;
   font-size: 15px;
   color: #53B4E0;
   margin-bottom: 20px; }
 
 .work_description {
-  font-family: Lato;
+  font-family: Lato-Regular;
   font-size: 15px; }
 
 .concord {
@@ -585,7 +585,7 @@
   border-bottom: 1px solid white; }
 
 .footer_top-container-left {
-  font-family: Lato Light;
+  font-family: Lato-Light;
   font-size: 75px;
   color: white;
   margin: 0 100px; }
@@ -601,7 +601,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Lato Light; }
+  font-family: Lato-Light; }
 
 @media screen and (max-width: 800px) {
   .footer_top-container {
