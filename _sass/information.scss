@@ -64,6 +64,35 @@
   }
 }
 
+.services_expand-wrapper-mobile {
+  transform: scale(1000);
+  transition: linear .5s;
+}
+
+.services_expand-description-mobile {
+  display: unset;
+}
+
+.services_expand-icon-mobile {
+  display: unset;
+}
+.services_box-mobile {
+  position: absolute;
+  top: 20px; 
+  left: 20px;
+  flex-direction: row;
+  transition: linear .5s;
+}
+.services_title-mobile {
+  color: white !important;
+  z-index: 100
+}
+.services_icon-mobile {
+  display: none;
+}
+
+
+
 .services_box {
   display: flex;
   flex-direction: column;
@@ -219,6 +248,7 @@
 }
 
 .contact_wrapper-fixed {
+  position: -webkit-sticky;
   position: sticky;
   top: 120px;
   right: 30px;
