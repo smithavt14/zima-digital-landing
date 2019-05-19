@@ -1,25 +1,25 @@
 - name: Digital Strategy
-  color_icon: /assets/images/strategy-red.svg
-  white_icon: /assets/images/strategy-white.svg
-  description: With barriers like the internet firewall, localized platforms, and unique user behavior, it can be difficult for any foreign business to succeed in the Chinese market. We help you make sense of the Chinese digital landscape and work with you to create a plan which leverages local assets to achieve your business objectives.
+  color_icon: assets/images/strategy-red.svg
+  white_icon: assets/images/strategy-white.svg
+  description: With barriers like the internet firewall, localized platforms, and unique user behavior, it can be difficult for any foreign business to succeed in the Chinese market. We help you make sense of the Chinese digital landscape and work with you to create a plan which leverages localassets to achieve your business objectives.
   class: strategy
 - name: WeChat Mini Programs
-  color_icon: /assets/images/wechat-green.svg
-  white_icon: /assets/images/wechat-white.svg
+  color_icon: assets/images/wechat-green.svg
+  white_icon: assets/images/wechat-white.svg
   description: Mini Programs are quickly becoming the most widely sought after digital product in the Chinese market. With their ease of use, social shareability, and low development costs, they are a great solution for any company looking to either enter into the market, or create another entrypoint for their brand.
   class: wechat
 - name: Websites / H5
-  color_icon: /assets/images/website-blue.svg
-  white_icon: /assets/images/website-white.svg
+  color_icon: assets/images/website-blue.svg
+  white_icon: assets/images/website-white.svg
   description: Websites are still considered to be one of the first user touch points for many brands in China. However, with the Chinese firewall, many Chinese users find it difficult or impossible to access foreign websites. Our team will help update your website’s design to fit the Chinese market and publish it in the Chinese interweb, making it fast, easy, and attractive to your new target audience.
   class: website
 - name: Web Apps
-  color_icon: /assets/images/webapp-blue.svg
-  white_icon: /assets/images/webapp-white.svg
+  color_icon: assets/images/webapp-blue.svg
+  white_icon: assets/images/webapp-white.svg
   description: Web Apps power the internet. They are the products which we use everyday to connect, shop, discover, and create. If your company is looking to build an online application for your users, our team can help you the entire way from product strategy to deployment and management.
   class: webapp
 - name: Workshops
-  color_icon: /assets/images/workshop-blue.svg
-  white_icon: /assets/images/workshop-white.svg
+  color_icon: assets/images/workshop-blue.svg
+  white_icon: assets/images/workshop-white.svg
   description: Curious about how it all works? We’ve been there. So we’re helping to demystify technology by providing both public and private workshops on web development, javascript, WeChat Mini Programs, and product development.
   class: workshop
