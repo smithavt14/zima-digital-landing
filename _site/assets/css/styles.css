@@ -64,7 +64,7 @@
     display: none; }
 
   .mobile-navigation_wrapper {
-    display: unset;
+    display: none;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -453,7 +453,10 @@
 
   .about_reason {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .contact_wrapper {
+    margin: 100px 0; } }
 @keyframes fly {
   0% {
     top: -40px;
