@@ -48,7 +48,7 @@
   cursor: pointer; }
 
 .navigation_language {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-family: Lato-Regular;
@@ -596,6 +596,7 @@
   color: white;
   width: 95%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: Lato Light; }
 
@@ -621,7 +622,7 @@
     margin: 30px 0; }
 
   .footer_bottom-container {
-    justify-content: center; } }
+    justify-content: space-between; } }
 html {
   scroll-behavior: smooth; }
 

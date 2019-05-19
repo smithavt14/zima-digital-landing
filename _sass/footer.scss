@@ -37,6 +37,7 @@
   color: white;
   width: 95%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: Lato Light;
 }
@@ -67,6 +68,6 @@
   }
 
   .footer_bottom-container {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
