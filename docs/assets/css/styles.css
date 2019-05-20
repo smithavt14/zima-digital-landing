@@ -438,17 +438,24 @@
 .contact_input {
   font-family: Lato-Regular;
   font-size: 15px;
-  font-style: italic;
   border: 0;
   border-bottom: 1px solid #0A2141;
   background: unset;
   width: 80%;
   font-size: 14px; }
+  .contact_input::placeholder {
+    font-style: italic; }
 
 .input-box {
   height: 100px;
   background: white;
   border-bottom: 0; }
+
+input:focus {
+  outline: none !important; }
+
+textarea:focus {
+  outline: none !important; }
 
 .contact_submit {
   height: 40px;
@@ -460,6 +467,14 @@
   background: #0A2141;
   font-family: Lato-Regular;
   font-size: 15px; }
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  width: 90%; }
 
 @media screen and (max-width: 800px) {
   .information_wrapper {

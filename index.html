@@ -62,10 +62,12 @@ title: Zima Digital
         <div>Like what you see?</div>
         <div>Leave a message.</div>
       </div>
-      <input class="contact_input" type="text" placeholder="Your name">
-      <input class="contact_input" required="true" type="text" placeholder="Your email, WeChat, or phone">
-      <input class="contact_input input-box" placeholder="Your message" type="text">
-      <input class="contact_submit" type="submit" value="SUBMIT">
+      <form class="contact_form" action="https://formspree.io/alex@zimadigital.io" method="POST">
+        <input class="contact_input" type="text" name="name" placeholder="Your name">
+        <input class="contact_input" required="true" type="text" name="contact" placeholder="Your email, WeChat, or phone">
+        <textarea class="contact_input input-box" name="message" placeholder="Your message" type="text"></textarea>
+        <input class="contact_submit" type="submit" value="SUBMIT">
+      </form>
     </div>
   </div>
 </div>
