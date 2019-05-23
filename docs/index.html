@@ -6,6 +6,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Zima Digital</title>
     <link rel="stylesheet" href="assets/css/styles.css">'
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="navigation_wrapper">
@@ -22,11 +23,6 @@
     <div class="intro_subtitle">Equipping modern teams with modern tools</div>
   </div>
   <img class="intro_rocket" src="assets/images/rocket.svg" alt="Zima Digital Rocket">
-</div>
-
-<div class="lower-navigation_wrapper">
-  <div class="lower-navigation_tab" id="services-tab">OUR SERVICES</div>
-  <div class="lower-navigation_tab" id="work-tab">OUR WORK</div>
 </div>
 
 <!-- Information Banner -->
@@ -146,16 +142,19 @@
       </div>
     </div>
     <div class="work_image-box">
-      <img class="work_image-panel" src="assets/images/move_panel_1.png" alt="">
-      <img class="work_image-panel" src="assets/images/move_panel_2.png" alt="">
-      <img class="work_image-panel" src="assets/images/move_panel_3.png" alt="">
+      <img class="work_image-panel" id="move_panel-1" src="assets/images/move_panel_1.png" alt="">
+      <img class="work_image-panel" id="move_panel-2" src="assets/images/move_panel_2.png" alt="">
+      <img class="work_image-panel" id="move_panel-3" src="assets/images/move_panel_3.png" alt="">
+    </div>
+    <div class="work_mobile-image-box">
+      <img style="width: 100%; border-radius: 6px;" src="assets/images/mobile_move.png" alt="Mobile Move Work Example">
     </div>
   </div>
   <div class="work_container" id="concord-container">
     <div class="work_image-box">
-      <img class="work_image-panel" src="assets/images/concord_panel_1.png" alt="">
-      <img class="work_image-panel" src="assets/images/concord_panel_2.png" alt="">
-      <img class="work_image-panel" src="assets/images/concord_panel_3.png" alt="">
+      <img class="work_image-panel" id="concord_panel-1" src="assets/images/concord_panel_1.png" alt="">
+      <img class="work_image-panel" id="concord_panel-2" src="assets/images/concord_panel_2.png" alt="">
+      <img class="work_image-panel" id="concord_panel-3" src="assets/images/concord_panel_3.png" alt="">
     </div>
     <div class="work_info-box">
       <div class="work_title"><b>Concord Music</b> | Upgrading for the Chinese Market</div>
@@ -188,5 +187,6 @@
     <script src="assets/js/navigation.js"></script>
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/services.js"></script>
+    <script src="assets/js/scrollReveal.js"></script>
   </body>
 </html>

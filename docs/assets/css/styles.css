@@ -99,7 +99,7 @@
       border-radius: 1px; } }
 .intro_wrapper {
   background-color: white;
-  height: calc(100vh - 110px);
+  height: 100vh;
   margin-top: 0px;
   width: 100vw;
   position: relative; }
@@ -568,6 +568,11 @@ textarea:focus {
   position: relative;
   overflow: hidden; }
 
+.work_mobile-image-box {
+  display: none;
+  width: 100%;
+  margin: 0 auto; }
+
 .work_image-panel {
   width: 32%; }
 
@@ -601,7 +606,11 @@ textarea:focus {
     margin-bottom: 30px; }
 
   .work_image-box {
+    display: none;
     width: 100%; }
+
+  .work_mobile-image-box {
+    display: unset; }
 
   #concord-container {
     flex-direction: column-reverse; } }

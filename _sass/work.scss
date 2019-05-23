@@ -47,6 +47,12 @@
   overflow: hidden;
 }
 
+.work_mobile-image-box {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .work_image-panel {
   width: 32%;
 }
@@ -87,7 +93,12 @@
   }
 
   .work_image-box {
+    display: none;
     width: 100%;
+  }
+
+  .work_mobile-image-box {
+    display: unset;
   }
 
   #concord-container {
