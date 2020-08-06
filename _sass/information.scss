@@ -24,6 +24,7 @@
   color: white;
   font-family: Lato-Regular;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .services_container {
@@ -36,6 +37,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  border-radius: 4px;
   &:hover {
     .services_expand-wrapper {
       transform: scale(1000);
@@ -49,7 +51,7 @@
     }
     .services_box {
       position: absolute;
-      top: 20px; 
+      top: 20px;
       left: 20px;
       flex-direction: row;
       transition: linear .5s;
@@ -78,7 +80,7 @@
 }
 .services_box-mobile {
   position: absolute;
-  top: 20px; 
+  top: 20px;
   left: 20px;
   flex-direction: row;
   transition: linear .5s;
@@ -90,8 +92,6 @@
 .services_icon-mobile {
   display: none;
 }
-
-
 
 .services_box {
   display: flex;
@@ -190,8 +190,9 @@
   align-items: center;
   color: white;
   background: $oxford-blue;
-  font-family: Lato-Regular; 
+  font-family: Lato-Regular;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .about_content {
@@ -204,7 +205,7 @@
   display: flex;
   &:last-child {
     .about_reason-content {
-      border-bottom: 0  
+      border-bottom: 0
     }
   }
 }
@@ -245,6 +246,7 @@
   border: 8px solid $oxford-blue;
   box-sizing: border-box;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(82, 179, 224, 0.5) 100%), #FFFFFF;
+  border-radius: 4px;
 }
 
 .contact_wrapper-fixed {
@@ -355,7 +357,7 @@ textarea:focus {
   25% {
     top: -45px;
     left: 51%;
-    transform: translateX(-51%); 
+    transform: translateX(-51%);
   }
   50% {
     top: -50px;
